@@ -1,0 +1,10 @@
+{
+  "name": "blackjack-clone-javascript",
+  "description": "blackjack (twenty-one) clone game implemented using javascript & jquery.",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.x"
+  }
+}
+
