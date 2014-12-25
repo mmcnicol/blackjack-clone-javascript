@@ -69,7 +69,7 @@ cPack.prototype.shuffle = function()
 
 cPack.prototype.getNextCard = function() 
 {
-	if ( this.getCardsCount == 0 )
+	if ( this.getCardsCount() == 0 )
 	{
 		this.init();
 	}
