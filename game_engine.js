@@ -199,8 +199,11 @@ cGameEngine.prototype.deal = function()
 	this.playerHit();
 	this.checkForWinnerOrLooser();
 
-	this.setState("waitForButtonHitStand");
-	this.oDisplayManager.refreshPlayerActionButtons( this );
+	if ( this.getState() == "dealing-initial-begin" )
+	{
+		this.setState("waitForButtonHitStand");
+		this.oDisplayManager.refreshPlayerActionButtons( this );
+	}
 };
 
 cGameEngine.prototype.checkForWinnerOrLooser = function() 
